@@ -28,19 +28,18 @@ function storeBook(){
 
     alert((document.getElementById("title")).value)
 
-    let Title = document.getElementById("title");
-    let Author = document.getElementById("author");
-    let Edition = document.getElementById("edition");
-    let Pages = document.getElementById("pages");
-    let Date = document.getElementById("date");
-    let Genre = document.getElementById("genre");
-    let Copies= document.getElementById("copies");
+    let Title = (document.getElementById("title")).value;
+    let Author = (document.getElementById("author")).value;
+    let Edition = (document.getElementById("edition")).value;
+    let Pages = (document.getElementById("pages")).value;
+    let Date = (document.getElementById("date")).value;
+    let Genre = (document.getElementById("genre")).value;
+    let Copies= (document.getElementById("copies")).value;
     alert(Title)
     books.push(
         new book(Title,Author,Edition,Pages,Date,Genre,Copies)
     )
-    alert(books)
-    alert(books[0][Title])
+    alert(books[0].Title)
 }
 
 function searchByType(type,val){
