@@ -39,7 +39,6 @@ function storeBook(){
     books.push(
         new book(Title,Author,Edition,Pages,Date,Genre,Copies)
     )
-    alert(books[0].Title)
 }
 
 function searchByType(type,val){
@@ -49,4 +48,10 @@ function searchByType(type,val){
             temp.push(books[i])
         }
     return temp
+}
+
+function displayBook(){
+    alert("Woah")
+    let temp = new book("Title","","","","","","")
+    document.getElementById("display").innerHTML = "Name " + temp.Title
 }
